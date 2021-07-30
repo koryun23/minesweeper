@@ -1,0 +1,58 @@
+<Game>:
+    GridLayout:
+        cols:1
+        canvas.before:
+            Color: 
+                rgba:(34/255, 41/255, 51/255,1)
+            Rectangle:
+                pos:self.pos
+                size:self.size
+        GridLayout:
+            cols:1
+            size_hint:0.1,0.1
+            RelativeLayout:
+                Button:
+                    text:"New Game"
+                    on_press:root.start()
+                    size_hint:None,None
+                    pos_hint:{'center_x':0.5, 'center_y':0.7}
+                    size:100,44
+                    background_color: (34/255, 56/255, 189/255, 1)
+        GridLayout:
+            size_hint:0.2,0.2
+            cols:3
+            GridLayout:
+                size_hint:0.2,0.2
+                cols:1
+                Label:
+                    id:mine_id
+                    text:""
+                    color:(1,0,0,1)
+                    font_size:"25sp"
+
+            Label:
+                size_hint:0.6,0.6
+                id:status
+                text:""
+                font_size:'25sp'
+                color: (1,0,0,1) if root.ids.status.text == 'You lost.' else (0,1,1,1) if root.ids.status.text == "Game in progress..." else (0,1,0,1)
+            GridLayout:
+                cols:3
+                size_hint:0.1,0.1
+                # Label:
+                #     id:minute
+                #     text:""
+                # Label:
+                #     text:""
+                #     id:sep
+                # Label:
+                #     id: second
+                #     text:""
+        GridLayout:
+            cols:1
+            id:main_layout
+
+
+<RootWidget>:
+    Game:
+        name: "game"
