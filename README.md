@@ -30,7 +30,7 @@ Clone the project. To do so, open the command line and type ```git clone https:/
 _Second way:_
 Download the archive of the project. To do so, open the github page of the repo, press the green button labelled ```Code```, and choose ```Download ZIP```. <br /> <br />
 
-**How to use the app** <br /> <br />
+**How to launch the app** <br /> <br />
 
 After you have all the dependencies and project installed on your device, it's time to actually launch the program. Follow the steps below:
 
@@ -40,4 +40,8 @@ _2) In the command line, type ```python main.py``` to launch the program_
 
 After the program launched, press the button on the top labelled as ```New Game```. Now, you are ready to play the game!
 
+**Some instructions on how to use the app** <br /><br />
 
+_1) If you want to mark the button as a mine, keep the button pressed continuously for a second._
+_2) The number on the top-left side of the app indicates the quantity of unmarked mines.
+_3) on the top you can see the state of the game. If the game is not over yet, it says ```Game in progress...```, If you win, the text of the state says ```You win!```, and finally if you lose, it says ```You lost.```
