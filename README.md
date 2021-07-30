@@ -42,6 +42,6 @@ After the program launched, press the button on the top labelled as ```New Game`
 
 **Some instructions on how to use the app** <br /><br />
 
-_1) If you want to mark the button as a mine, keep the button pressed continuously for a second._
-_2) The number on the top-left side of the app indicates the quantity of unmarked mines.
-_3) on the top you can see the state of the game. If the game is not over yet, it says ```Game in progress...```, If you win, the text of the state says ```You win!```, and finally if you lose, it says ```You lost.```
+_1) If you want to mark the button as a mine, keep the button pressed continuously for a second._ <br /><br />
+_2) The number on the top-left side of the app indicates the quantity of unmarked mines.<br /><br />
+_3) on the top you can see the state of the game. If the game is not over yet, it says ```Game in progress...```, If you win, the text of the state says ```You win!```, and finally if you lose, it says ```You lost.```<br /><br />
