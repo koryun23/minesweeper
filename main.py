@@ -35,7 +35,11 @@ cells = []
 colors = [(34/255, 41/255, 51/255, 0), (0,0,1,1), (0,128/255,0,1), (1,0,0,1),(75/255,0,130/255,1),(139/255, 0, 0, 1)]
 run = True
 
-class Game(Screen):    
+class Game(Screen):
+    def __init__(self, **kw):
+        super().__init__(**kw)
+        self.start()
+
     def start(self):
         #threading.Thread(target = self.game_timer).start()
         self.ids.main_layout.clear_widgets()
@@ -250,7 +254,7 @@ class RootWidget(ScreenManager):
 
 class MainApp(App):
     def build(self):
-        return RootWidget()
+        return Game()
 
 if __name__ == "__main__":
     MainApp().run()
